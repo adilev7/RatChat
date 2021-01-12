@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>chat</title>
+  </head>
+  <body>
+    <div id="loader">
+      <img src="pictures/loader-yellow.gif" alt="loading..." />
+    </div>
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper">
+          <a href="/" class="brand-logo"><span>RatChat</span></a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse"
+            ><i class="material-icons">menu</i></a
+          >
+          <ul class="right hide-on-med-and-down">
+            <li>
+              <a class="dropdown-trigger" data-activates="dropdown"
+                ><i class="fas fa-user"></i
+                ><i class="material-icons">arrow_drop_down</i></a
+              >
+            </li>
+          </ul>
+          <ul id="dropdown" class="dropdown-content">
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">New Group Chat</a></li>
+            <li class="divider" tabindex="-1"></li>
+            <li class="logout-btn"><a>Log Out</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <ul class="side-nav" id="mobile-demo">
+      <li><a href="#">Chats</a></li>
+      <li><a href="#">Friends</a></li>
+      <li><a href="#">Javascript</a></li>
+    </ul>
+    <div id="main-container">
+      <div class="collection friends-list">
+        <div class="tabs-container">
+          <ul class="tabs">
+            <li class="tab">
+              <a class="active" href="#chats">Chats</a>
+            </li>
+            <li class="tab">
+              <a href="#friends">Friends</a>
+            </li>
+          </ul>
+        </div>
+        <div id="chats" class="chats-tab"></div>
+        <div id="friends" class="friends-tab"></div>
+      </div>
+    <div class="chat-container">
+      <div class="chatbox"></div>
+      <form id="chat-form">
+        <input
+          type="text"
+          name="chat-input"
+          id="chatInput"
+          class="chat-input"
+          placeholder="What's up?"
+          autofocus
+        />
+        <input type="submit" class="chat-btn" value="SEND" />
+      </form>
+    </div>
+<!--
+    <div class="fixed-action-btn">
+      <a class="btn-floating btn-large waves-effect waves-circle waves-red orange">
+        <i class="large material-icons">mode_edit</i>
+      </a>
+       <ul>
+        <li>
+          <a class="btn-floating red"
+            ><i class="material-icons">insert_chart</i></a
+          >
+        </li>
+        <li>
+          <a class="btn-floating yellow darken-1"
+            ><i class="material-icons">format_quote</i></a
+          >
+        </li>
+        <li>
+          <a class="btn-floating green"
+            ><i class="material-icons">publish</i></a
+          >
+        </li>
+        <li>
+          <a class="btn-floating blue"
+            ><i class="material-icons">attach_file</i></a
+          >
+        </li> -->
+      </ul>
+    </div>
+    <!-- <footer class="footer"> -->
+    <!-- <a class="credit" href="https://www.freepik.com/vectors/background"
+      >Background vector created by macrovector - www.freepik.com</a> -->
+  <!-- </footer> -->
+</div>
+  </body>
+  <!-- QS script - manipulate & use the URL's query string -->
+  <!-- <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js"
+    integrity="sha256-TDxXjkAUay70ae/QJBEpGKkpVslXaHHayklIVglFRT4="
+    crossorigin="anonymous"
+  ></script> -->
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/chat.js"></script>
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    type="text/javascript"
+  ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script src="./js/common/styles.js"></script>
+</html>

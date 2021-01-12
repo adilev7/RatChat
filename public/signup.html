@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      type="text/javascript"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <title>RatChat - Sign Up</title>
+  </head>
+  <body>
+    <div id="loader">
+      <img src="pictures/loader-yellow.gif" alt="loading..." />
+    </div>
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper">
+          <a href="/" class="brand-logo"><span>RatChat</span></a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse"
+            ><i class="material-icons">menu</i></a
+          >
+          <ul class="right hide-on-med-and-down">
+            <li><a href="/signin">Sign In</a></li>
+            <li>
+              <a class="dropdown-trigger" data-activates="dropdown"
+                ><i class="fas fa-user"></i
+                ><i class="material-icons">arrow_drop_down</i></a
+              >
+            </li>
+          </ul>
+          <ul id="dropdown" class="dropdown-content">
+            <li><a href="#">one</a></li>
+            <li><a href="#">two</a></li>
+            <li class="divider" tabindex="-1"></li>
+            <li><a href="#">three</a></li>
+            <li>
+              <a href="#"><i class="material-icons">view_module</i>four</a>
+            </li>
+            <li>
+              <a href="#"><i class="material-icons">cloud</i>five</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <ul class="side-nav" id="mobile-demo">
+      <li><a href="#">Chats</a></li>
+      <li><a href="#">Friends</a></li>
+      <li><a href="#">Javascript</a></li>
+    </ul>
+    <div class="signup-container">
+      <form class="signup-form">
+        <div class="h1bg">
+          <h1>Sign Up</h1>
+        </div>
+        <label for="username"></label>
+        <input
+          type="username"
+          name="username"
+          id="username"
+          class="username"
+          placeholder=" username"
+          autofocus
+          required
+        />
+        <label for="email"></label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="email"
+          placeholder=" email"
+          required
+        />
+        <label for="password"></label>
+        <input
+          type="text"
+          name="password"
+          id="password"
+          class="passwordUp"
+          placeholder=" password"
+          required
+        />
+        <input type="button" value="cancel" class="secondary-signup" />
+        <input class="signup-btn" type="submit" value="Sign up" />
+      </form>
+    </div>
+    <a class="credit" href="https://www.freepik.com/vectors/background"
+      >Background vector created by macrovector - www.freepik.com</a
+    >
+  </body>
+  <script src="./js/common/styles.js"></script>
+  <script src="js/signup.js"></script>
+</html>
